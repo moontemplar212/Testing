@@ -7,14 +7,16 @@
 
 Unit testing is the most basic form of testing where single functions usually with one or a few inputs and a single output are tested to make sure they meet requirements specifications and documentation. What differentiates this type of testing from others is that functions should be tested in isolation without any dependancies or interactions outside of it's own scope. This enables confirmation that the function works as intended by itself.
 
-> Example
+> **Example**
 ><br>
 ><br>
 > function (a, b) {<br>
 > &ensp; return a + b;<br>
 >}<br>
 
-The above function is a simple sum of two elements a and b. The scope of the function is that it takes two inputs and returns one output. There are no outside dependencies such as global variables or reliance on other functions. 
+The above function is a simple sum of two elements a and b. The scope of the function is that it takes two inputs and returns one output. There are no outside dependencies such as global variables or reliance on other functions.
+
+Unit testing tends to be simple as it only deals with single functions. However, even functions can become complicated quickly.
 
 ### Integration testing:
   * Many individual code actions
