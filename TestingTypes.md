@@ -16,15 +16,17 @@ Unit testing is the most basic form of testing where single functions usually wi
 
 The above function is a simple sum of two elements a and b. The scope of the function is that it takes two inputs and returns one output. There are no outside dependencies such as global variables or reliance on other functions.
 
-Unit testing tends to be simple as it only deals with single functions. However, even functions can become complicated quickly.
+Unit testing tends to be simple as it only deals with single functions.
 
 ### Integration testing:
   * Many individual code actions
 
-Integration testing is 
+Integration testing is the most basic type of testing after unit testing where two or more functions are combined and tested together. The interaction of groups of functions when combined together gives this testing type it's name and scope. Integration testing is where the fun begins in terms of testing where many and complex interactions start to emerge due to the reliance on external actions for inputs and outputs instead of simple inputs and outputs. Indeed, external actions which might not be under direct control can have wide and unintended consequences when modified. When components begin to be integrated the principle of defect clustering is a powerful technique to utilise, as many defects can be discovered at once and together to reduce the overall testing load and focus testing effort.
 
 ### Interface testing:
   * Connections between parts of a system
+
+Interface testing as the name suggests focuses on the interface between components, specifically any data migration between function scope.
 
 ### System testing:
   * Entire code base
