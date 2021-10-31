@@ -9,9 +9,12 @@ Unit testing is the most basic form of testing where single functions usually wi
 
 > Example
 ><br>
+><br>
 > function (a, b) {<br>
-> &nbsp return a + b;<br>
+> &ensp; return a + b;<br>
 >}<br>
+
+The above function is a simple sum of two elements a and b. The scope of the function is that it takes two inputs and returns one output. There are no outside dependencies such as global variables or reliance on other functions. 
 
 ### Integration testing:
   * Many individual code actions
