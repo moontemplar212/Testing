@@ -5,7 +5,8 @@
 ### Unit testing:
   * Individual code actions
 
-### Integration testing:  * Many individual code actions
+### Integration testing:
+  * Many individual code actions
 
 ### Interface testing:
   * Connections between parts of a system
