@@ -3,10 +3,22 @@
 ## Functional Testing
 
 ### Unit testing:
-  * Individual code actions
+  * Individual units / modules / functions of code action
+
+Unit testing is the most basic form of testing where single functions usually with one or a few inputs and a single output are tested to make sure they meet requirements specifications and documentation. What differentiates this type of testing from others is that functions should be tested in isolation without any dependancies or interactions outside of it's own scope. This enables confirmation that the function works as intended by itself.
+
+>\
+> Example
+>\
+> function (a, b) {
+>  return a + b;  
+> }
+>\
 
 ### Integration testing:
   * Many individual code actions
+
+Integration testing is 
 
 ### Interface testing:
   * Connections between parts of a system
