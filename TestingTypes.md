@@ -19,14 +19,14 @@ The above function is a simple sum of two elements a and b. The scope of the fun
 Unit testing tends to be simple as it only deals with single functions.
 
 ### Integration testing:
-  * Many individual code actions
+  * Groupings of individual code actions
 
 Integration testing is the most basic type of testing after unit testing where two or more functions are combined and tested together. The interaction of groups of functions when combined together gives this testing type it's name and scope. Integration testing is where the fun begins in terms of testing where many and complex interactions start to emerge due to the reliance on external actions for inputs and outputs instead of simple inputs and outputs. Indeed, external actions which might not be under direct control can have wide and unintended consequences when modified. When components begin to be integrated the principle of defect clustering is a powerful technique to utilise, as many defects can be discovered at once and together to reduce the overall testing load and focus testing effort.
 
 ### Interface testing:
-  * Connections between parts of a system
+  * Boundaries between parts of a system
 
-Interface testing as the name suggests focuses on the interface between components, specifically any data migration between function scope.
+Interface testing as the name suggests focuses on the interface between components. More specifically, this can be summarsised as any data migration that goes between two different function scopes. If the migration was inter-function, then most likely the testing could be completed as a unit test. However, when the passage of data takes place over more than one function therein lies an interface between them.
 
 ### System testing:
   * Entire code base
@@ -34,26 +34,42 @@ Interface testing as the name suggests focuses on the interface between componen
 ### Acceptance testing:
   * User validation of the system
 
+Acceptance testing or User Acceptance Testing (UAT) is a type of testing that takes place at the same level as System Testing whereby the customer or external stakeholder uses the system under test and validates it against a set of pre-defined criteria, most often, the requirements specification document to verify the system is working with given inputs and producing expected outputs as required by the business needs.  
+
 ### Regression testing:
   * Checking for regression in parts of the system where changes have been made elsewhere
+
+Regression testing is where most of the time in software testing is spent. Regression as the name suggests checks for reverted behaviour in the system due to other code changes not directly related to the area under test. 
 
 ### Alpha/Beta testing: 
   * Testing two version of the same feature
 
+Alpha / Beta testing 
+
 ### Confirmation testing:
   * Checking the defect fix produces the correct result
+
+Confirmation testing checks that the bugfix has removed the cause of the defect in the system.
 
 ### Sanity testing:
   * High level critical functionality
 
+A sanity test of the system is a high level check that core functionality and components work as expected and in a rational way. Do the components work the way we expect them to?
+
 ### Smoke testing: 
   * Brief high level critical functionality
+
+Smoke testing is a brief high level check that core functionality and components work as expected after a new build.  
 
 ### Exploratory testing:
   * Non-structured testing
 
+Exploratory testing like the name suggests is a non-structure exploration of the system with no pre-defined checklist or goals to be achieved during testing. Often it is used when the tester has experience and intuition about the system being tested whereby defects are likely to be found in a quicker timeframe than running down a checklist of items one by one.
+
 ### Checklist based testing:
   * Structured testing using a list of items
+
+Checklist based testing is a rigorously structured method of testing with a pre-defined checklist of items or goals to be achieved during testing. This type of testing is best used when minimum standards or levels of verification must be met and a record kept. This type of testing 
 
 ### Blackbox testing:
   * Not knowing the interal structure of the system
