@@ -2,10 +2,12 @@
 
 ## Functional Testing
 
-### Unit testing:
-  * Individual units / modules / functions of code action
+Functional testing refers to the testing of the software system against the functional requirements/specifications of that system. This is performed by using an appropriate assortment of inputs to exercise the code functions and compare the outputs against expected outputs. 
 
-Unit testing is the most basic form of testing where single functions usually with one or a few inputs and a single output are tested to make sure they meet requirements specifications and documentation. What differentiates this type of testing from others is that functions should be tested in isolation without any dependancies or interactions outside of it's own scope. This enables confirmation that the function works as intended by itself.
+### Unit testing:
+  * Individual [ units / modules / functions ] of action
+
+Unit testing is the most basic form of testing where single functions ideally with one ( or a few ) inputs and a single output are exercised. Functions should be tested in isolation without any dependancies or interactions with other code outside its own function scope. This ensures that the function works as intended by itself.
 
 > **Example**
 ><br>
@@ -14,9 +16,9 @@ Unit testing is the most basic form of testing where single functions usually wi
 > &ensp; return a + b;<br>
 >}<br>
 
-The above function is a simple sum of two elements a and b. The scope of the function is that it takes two inputs and returns one output. There are no outside dependencies such as global variables or reliance on other functions.
+This function sums two elements a and b. The scope of the function is that it takes two inputs and returns one output. There are no outside dependencies such as global variables or reliance on other functions.
 
-Unit testing tends to be simple as it only deals with single functions.
+Unit testing tends to be simple as it only deals with single functions. The corresponding tests should be short, to the point and self-documenting as the complexity is low.
 
 ### Integration testing:
   * Groupings of individual code actions
