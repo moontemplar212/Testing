@@ -5,9 +5,9 @@
 Functional testing refers to the testing of the software system against the functional requirements/specifications of that system. This is performed by using an appropriate assortment of inputs to exercise the code functions and compare the outputs against expected outputs. 
 
 ### Unit testing:
-  * Individual [ units / modules / functions ] of action
+  * Individual [ units / modules / functions ] actions
 
-Unit testing is the most basic form of testing where single functions ideally with one ( or a few ) inputs and a single output are exercised. Functions should be tested in isolation without any dependancies or interactions with other code outside its own function scope. This ensures that the function works as intended by itself.
+Unit testing is the most basic form of testing where single functions or parts of the system, ideally with one ( or a few ) inputs and a single output, are exercised. Functions should be tested in isolation without any dependancies or interactions with other code outside its own function scope. This ensures that the function works as intended by itself.
 
 > **Example**
 ><br>
@@ -21,9 +21,9 @@ This function sums two elements a and b. The scope of the function is that it ta
 Unit testing tends to be simple as it only deals with single functions. The corresponding tests should be short, to the point and self-documenting as the complexity is low.
 
 ### Integration testing:
-  * Groupings of individual code actions
+  * Groupings of individual actions
 
-Integration testing is the most basic type of testing after unit testing where two or more functions are combined and tested together. The interaction of groups of functions when combined together gives this testing type it's name and scope. Integration testing is where the fun begins in terms of testing where many and complex interactions start to emerge due to the reliance on external actions for inputs and outputs instead of simple inputs and outputs. Indeed, external actions which might not be under direct control can have wide and unintended consequences when modified. When components begin to be integrated the principle of defect clustering is a powerful technique to utilise, as many defects can be discovered at once and together to reduce the overall testing load and focus testing effort.
+Integration testing occurs mainly when two or more functions or parts of the system are combined and tested together. Many and complex interactions can emerge due to the combination of inputs, outputs and reliance on external actions for inputs and outputs between functions. As actions outside the scope of the function become relevent to that function and hence effect the outcome of that function, unknown or unintendied modifications can cause unintended consequences as testing occurs. A second interpretation of external actions are external dependencies outside the system altogether such as a third party API that might be used within the system under test. Here, even more so than internal combinations, changes of which you have no control over might be implemented and need to be tested to ensure the software is still in working condition. As a general rule, when components begin to be integrated, the principle of defect clustering is a powerful technique to utilise as many defects can be discovered together and works to reduce the overall testing load and focus testing effort.
 
 ### Interface testing:
   * Boundaries between parts of a system
