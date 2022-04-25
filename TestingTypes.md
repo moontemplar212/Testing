@@ -7,7 +7,7 @@ Functional testing refers to the testing of the software system against the func
 ### Unit testing:
   * Individual [ units / modules / functions ] actions
 
-Unit testing is the most basic form of testing where single functions or parts of the system, ideally with one ( or a few ) inputs and a single output, are exercised. Functions should be tested in isolation without any dependancies or interactions with other code outside its own function scope. This ensures that the function works as intended by itself.
+Unit testing is the most basic form / first level of testing where single functions or parts of the system, ideally with one ( or a few ) inputs and a single output, are exercised. Functions should be tested in isolation without any dependancies or interactions with other code outside its own function scope. This ensures that the function works as intended by itself.
 
 > **Example**
 ><br>
@@ -23,15 +23,19 @@ Unit testing tends to be simple as it only deals with single functions. The corr
 ### Integration testing:
   * Groupings of individual actions
 
-Integration testing occurs mainly when two or more functions or parts of the system are combined and tested together. Many and complex interactions can emerge due to the combination of inputs, outputs and reliance on external actions for inputs and outputs between functions. As actions outside the scope of the function become relevent to that function and hence effect the outcome of that function, unknown or unintendied modifications can cause unintended consequences as testing occurs. A second interpretation of external actions are external dependencies outside the system altogether such as a third party API that might be used within the system under test. Here, even more so than internal combinations, changes of which you have no control over might be implemented and need to be tested to ensure the software is still in working condition. As a general rule, when components begin to be integrated, the principle of defect clustering is a powerful technique to utilise as many defects can be discovered together and works to reduce the overall testing load and focus testing effort.
+Integration testing is the second level of testing and occurs mainly when two or more functions or parts of the system are combined and tested together. Many and complex interactions can emerge due to the combination of inputs, outputs and reliance on external actions for inputs and outputs between functions. As actions outside the scope of the function become relevent to that function and hence effect the outcome of that function, unknown or unintendied modifications can cause unintended consequences as testing occurs. A second interpretation of external actions are external dependencies outside the system altogether such as a third party API that might be used within the system under test. Here, even more so than internal combinations, changes of which you have no control over might be implemented and need to be tested to ensure the software is still in working condition. As a general rule, when components begin to be integrated, the principle of defect clustering is a powerful technique to utilise as many defects can be discovered together and works to reduce the overall testing load and focus testing effort.
 
 ### Interface testing:
   * Boundaries between parts of a system
 
-Interface testing as the name suggests focuses on the interface between components. More specifically, this can be summarsised as any data migration that goes between two different function scopes. If the migration was inter-function, then most likely the testing could be completed as a unit test. However, when the passage of data takes place over more than one function therein lies an interface between them.
+Interface testing is a more focused version of integration testing. As the name suggests, here we focus on the interface between components, whether that is two parts of the same program or two different programs. More specifically, this can be summarsised as testing any data migration that goes between two different scopes. 
+
+An example of this would the commands, messages and other attributes that are transmitted between a web server and application server or database server. Specifically, we usually look to make sure that the servers are executing commands properly, errors are handled in the correct way that is not a security risk, data transfer is correct and what happens is one or both services are down.
+
+The most common interface testing would be performed on an API or Application Programming Interface.
 
 ### System testing:
-  * Entire code base
+  System testing is the third level of testing and involves a whole software product being tested end to end to ensure that the software product fulfills it's requirements specifications. By this point the software under test should be performing in line with expectations, or verified, but some parts may not pass validation, or does it do what the customer wants it to do.
 
 ### Acceptance testing:
   * User validation of the system
